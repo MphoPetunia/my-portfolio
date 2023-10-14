@@ -7,8 +7,8 @@
 body {
   margin: 60px auto;
   max-width: 800px;
-  background-color: powderblue;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: rgb(114, 180, 188);
 }
 
 h1,
@@ -38,6 +38,10 @@ p {
   border-radius: 4px;
   font-size: 18px;
   line-height: 1.5;
+}
+
+img {
+  display: block;
 }
 
 .navigation-links {
@@ -70,15 +74,60 @@ p {
   text-align: center;
   display: block;
 }
-
+.container {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
 .about-paragraphs {
   display: flex;
   margin: 30px 0;
 }
 
+.text-center {
+  text-align: center !important;
+}
+
 .about-paragraphs p {
   margin: 10px;
-  text-align: center;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) / -2);
+  margin-left: clac(var(--bs-gutter-x) / -2);
+}
+
+.rounded {
+  border-radius: 0, 25rem !important;
+}
+.p-2 {
+  padding: 0.5rem !important;
+}
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+.shadow {
+  box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.mt-5 {
+  margin-top: 3rem !important;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  vertical-align: middle;
 }
 
 .email-link {
@@ -110,12 +159,4 @@ p {
   text-transform: capitalize;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
-}
-
-@media (max-width: 576px) {
-  .project-link {
-    display: block;
-    text-align: center;
-    margin: 0 20px;
-  }
 }

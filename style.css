@@ -38,6 +38,7 @@ p {
   border-radius: 4px;
   font-size: 18px;
   line-height: 1.5;
+  text-align: center;
 }
 
 img {
@@ -74,13 +75,7 @@ img {
   text-align: center;
   display: block;
 }
-.container {
-  width: 100%;
-  padding-right: var(--bs-gutter-x, 0.75rem);
-  padding-left: var(--bs-gutter-x, 0.75rem);
-  margin-right: auto;
-  margin-left: auto;
-}
+
 .about-paragraphs {
   display: flex;
   margin: 30px 0;

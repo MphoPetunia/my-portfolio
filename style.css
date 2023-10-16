@@ -8,7 +8,7 @@ body {
   margin: 60px auto;
   max-width: 800px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  background-color: rgb(114, 180, 188);
+  background-color: rgb(151, 179, 182);
 }
 
 h1,
@@ -154,4 +154,33 @@ img {
   text-transform: capitalize;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+}
+
+.project-description {
+  padding: 120px 60px;
+}
+
+.btn-branding {
+  background: var(--branding-color);
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.btn-branding-outline {
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+@media (max-width: 900px) {
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
 }

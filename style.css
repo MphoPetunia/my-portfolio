@@ -45,6 +45,16 @@ img {
   display: block;
 }
 
+.larger-image {
+  width: 100%; /* Adjust the percentage as needed */
+  height: auto; /* This ensures the aspect ratio is maintained */
+  max-width: none; /* Override Bootstrap's max-width */
+}
+
+.larger-image .img-fluid {
+  max-width: none; /* Override Bootstrap's max-width for img-fluid */
+}
+
 .navigation-links {
   display: flex;
   margin-top: 40px;
@@ -99,30 +109,9 @@ img {
   margin-left: clac(var(--bs-gutter-x) / -2);
 }
 
-.rounded {
-  border-radius: 0, 25rem !important;
-}
-.p-2 {
-  padding: 0.5rem !important;
-}
-.mb-4 {
-  margin-bottom: 1.5rem !important;
-}
-.shadow {
-  box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-}
-
-.mt-5 {
-  margin-top: 3rem !important;
-}
-
 .img-fluid {
   max-width: 100%;
   height: auto;
-}
-
-img {
-  vertical-align: middle;
 }
 
 .email-link {
